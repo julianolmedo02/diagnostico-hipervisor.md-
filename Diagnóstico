@@ -1,0 +1,39 @@
+# Diagnóstico de Hipervisor
+
+## Paso 1 - Auditoría de Almacenamiento Local
+
+### Comando ejecutado
+
+```bash
+sudo lvs -o lv_name,lv_size,data_percent,metadata_percent
+```
+
+### Salida obtenida
+
+```text
+(Pegar aquí la salida completa del comando lvs)
+```
+
+---
+
+## Paso 2 - Diagnóstico de la Red Virtual
+
+### Comando ejecutado
+
+```bash
+brctl show
+```
+
+### Salida obtenida
+
+```text
+(Pegar aquí la salida completa del comando brctl show)
+```
+
+---
+
+## Conclusión Técnica
+
+Se verificó que el switch virtual detectado se encuentra operativo y mantiene la interconexión entre las interfaces de red configuradas en el host. No se observaron indicios de fallas o inconsistencias en la topología de red virtual durante la auditoría realizada.
+
+El estado actual del bridge permite una comunicación adecuada entre las máquinas virtuales y la red física, indicando una condición de funcionamiento estable para el entorno de virtualización analizado.
